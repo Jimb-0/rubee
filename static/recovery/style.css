@@ -1,0 +1,26 @@
+@import "responsive_style.css";
+html, body {
+  padding:0;
+  margin: 0;
+
+}
+body {
+  background:#112d50;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'NTF-Grand W00 Regular',sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.landing h3 {
+    letter-spacing:.4px;
+}
+.hero {
+    background-image: url("/static/recovery/pics/hoodie_foam_roller.jpg");
+}
+@font-face {
+        font-family:"NTF-Grand W00 Regular";
+        src:url("Fonts/5668191/78e11d53-0194-4483-bc84-5bc41734b735.woff2") format("woff2"),url("Fonts/5668191/9321fb55-e6d5-4a93-a087-b895fe29468f.woff") format("woff");
+    }

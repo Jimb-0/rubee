@@ -1,0 +1,161 @@
+@import "responsive_style.css";
+html, body {
+  padding:0;
+  margin: 0;
+
+}
+body {
+  background:white;
+  font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'NTF-Grand W00 Regular',sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+nav {
+    height:3rem;
+    border-bottom: 1px solid white;
+    position: sticky;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+nav i {
+    margin: 1rem;
+    color:white;
+}
+nav h2 {
+    color:#E40046;
+    width:100%;
+}
+nav button  {
+    width:7rem;
+    margin-right:1rem;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.landing h3 {
+    letter-spacing:1.4px;
+    font-weight: 400;
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size:1.5rem;
+
+}
+.hero:before {
+    content:"";
+    height:100%;
+    width:100%;
+    background: linear-gradient(181deg, black 24%, transparent 48%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+.hero {
+    background-image: url("/static/recovery/pics/hoodie_foam_roller.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position-y: -8.5rem;
+    background-repeat:no-repeat;
+    color:white;
+}
+.message {
+    position:relative;
+    z-index:2;
+    text-align:center;
+    height: 14rem;
+    margin: 1rem;
+}
+.message h1 {
+    margin-top: 2rem;
+}
+.message .charge{
+    color:#E40046;
+}
+.message .rotate_text:before {
+}
+.arrow_box {
+    position: relative;
+    height: 1rem;
+    top: 5rem;
+}
+.more_arrow {
+    font-size:2rem;
+    position:absolute;
+    animation: levitate 1150ms infinite linear;
+}
+.equipment {
+    text-align:center;
+}
+.equipment h2, .packages h2 {
+    font-size:1.8rem;
+}
+.equipment p {
+    font-size: 1.3rem;
+    width: 56%;
+    margin: 0 auto;
+}
+.equipment_cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.card {
+    border-radius:10px;
+    width: calc(100% - 19px);
+    height: 10rem;
+    box-shadow: 1px 6px 15px 0px #cfcfcf;
+    margin: 0 auto;
+    margin-left: 1rem;
+}
+.packages {
+    text-align:center;
+}
+.packages p {
+    width: 71%;
+    font-size: 1.3rem;
+    margin: 0 auto;
+}
+.packages p span {
+    font-family: 'NTF-Grand W00 Regular',sans-serif;
+    color:#E40046;
+}
+.packages h2 {
+    padding-top: 4rem;
+}
+footer {
+    background:black;
+    height:20rem;
+}
+@font-face {
+        font-family:"NTF-Grand W00 Regular";
+        src:url("Fonts/5668191/78e11d53-0194-4483-bc84-5bc41734b735.woff2") format("woff2"),url("Fonts/5668191/9321fb55-e6d5-4a93-a087-b895fe29468f.woff") format("woff");
+    }
+
+@keyframes levitate {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 50%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@keyframes rotate {
+    0% {
+        content:"chronic pain";
+    }
+    50% {
+        content:"injury";
+    }
+    100% {
+        content:"overtraining";
+    }
+}
